@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="lofi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+        <title>Goji Store</title>
+
+        <!--Tailwindcss-->
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body">
+         
+    <header class="border-b border-gray-100">
+      <div
+        class="flex items-center justify-between h-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8"
+      >
+        <div class="flex items-center">
+          <button type="button" class="p-2 sm:mr-4 lg:hidden">
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+    
+          <a href="" class="flex">
+            <span class="inline-block w-32 h-10 rounded-lg text-3xl pl-3">&#127826; Goji</span>
+          </a>
+        </div>
+    
+        <div class="flex items-center justify-end flex-1">
+          <nav
+            class="hidden lg:uppercase lg:text-gray-500 lg:tracking-wide lg:font-bold lg:text-xs lg:space-x-4 lg:flex"
+          >
+
+          <a
+          href="/products"
+          class="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
+        >
+          Products
+        </a>
+            <a
+              href="/about"
+              class="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
+            >
+              About
+            </a>
+    
+            <a
+              href="/contact"
+              class="block h-16 leading-[4rem] border-b-4 border-transparent hover:text-red-700 hover:border-current"
+            >
+              Contact
+            </a>
+          </nav>
+    
+          <div class="flex items-center ml-8">
+            <div
+              class="flex items-center border-gray-100 divide-x divide-gray-100 border-x"
+            >
+              <span>
+                <a
+                  href="./cart.html"
+                  class="block p-6 border-b-4 border-transparent hover:border-red-700"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                    />
+                  </svg>
+    
+                  <span class="sr-only">Cart</span>
+                </a>
+              </span>
+    
+              <span>
+                <a
+                  href="/account"
+                  class="block p-6 border-b-4 border-transparent hover:border-red-700"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                    />
+                  </svg>
+    
+                  <span class="sr-only"> Account </span>
+                </a>
+              </span>
+    
+              <span class="hidden sm:block">
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <section>
+        <h1 class="sr-only">Checkout</h1>
+      
+        <div class="relative mx-auto max-w-screen-2xl">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="py-12 bg-gray-50 md:py-24">
+              <div class="max-w-lg px-4 mx-auto lg:px-8">
+                <div class="flex items-center">
+                  <span class="w-10 h-10 bg-blue-900 rounded-full"></span>
+      
+                  <h2 class="ml-4 font-medium">BambooYou</h2>
+                </div>
+      
+                <div class="mt-8">
+                  <p class="text-2xl font-medium tracking-tight">$99.99</p>
+                  <p class="mt-1 text-sm text-gray-500">For the purchase of</p>
+                </div>
+      
+                <div class="mt-12">
+                  <div class="flow-root">
+                    <ul class="-my-4 divide-y divide-gray-200">
+                      <li class="flex items-center justify-between py-4">
+                        <div class="flex items-start">
+                          <img
+                            class="flex-shrink-0 object-cover w-16 h-16 rounded-lg"
+                            src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                            alt=""
+                          />
+      
+                          <div class="ml-4">
+                            <p class="text-sm">Vibrant Trainers</p>
+      
+                            <dl class="mt-1 space-y-1 text-xs text-gray-500">
+                              <div>
+                                <dt class="inline">Color:</dt>
+                                <dd class="inline">Blue</dd>
+                              </div>
+      
+                              <div>
+                                <dt class="inline">Size:</dt>
+                                <dd class="inline">UK 10</dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+      
+                        <div>
+                          <p class="text-sm">
+                            $49.99
+                            <small class="text-gray-500">x1</small>
+                          </p>
+                        </div>
+                      </li>
+      
+                      <li class="flex items-center justify-between py-4">
+                        <div class="flex items-start">
+                          <img
+                            class="flex-shrink-0 object-cover w-16 h-16 rounded-lg"
+                            src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                            alt=""
+                          />
+      
+                          <div class="ml-4">
+                            <p class="text-sm">Vibrant Trainers</p>
+      
+                            <dl class="mt-1 space-y-1 text-xs text-gray-500">
+                              <div>
+                                <dt class="inline">Color:</dt>
+                                <dd class="inline">Blue</dd>
+                              </div>
+      
+                              <div>
+                                <dt class="inline">Size:</dt>
+                                <dd class="inline">UK 10</dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+      
+                        <div>
+                          <p class="text-sm">
+                            $25
+                            <small class="text-gray-500">x2</small>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="py-12 bg-white md:py-24">
+              <div class="max-w-lg px-4 mx-auto lg:px-8">
+                <form class="grid grid-cols-6 gap-4">
+                  <div class="col-span-3">
+                    <label class="block mb-1 text-sm text-gray-600" for="first_name">
+                      First Name
+                    </label>
+      
+                    <input
+                      class="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
+                      type="text"
+                      id="frst_name"
+                    />
+                  </div>
+      
+                  <div class="col-span-3">
+                    <label class="block mb-1 text-sm text-gray-600" for="last_name">
+                      Last Name
+                    </label>
+      
+                    <input
+                      class="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
+                      type="text"
+                      id="last_name"
+                    />
+                  </div>
+      
+                  <div class="col-span-6">
+                    <label class="block mb-1 text-sm text-gray-600" for="email">
+                      Email
+                    </label>
+      
+                    <input
+                      class="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
+                      type="email"
+                      id="email"
+                    />
+                  </div>
+      
+                  <div class="col-span-6">
+                    <label class="block mb-1 text-sm text-gray-600" for="phone">
+                      Phone
+                    </label>
+      
+                    <input
+                      class="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
+                      type="tel"
+                      id="phone"
+                    />
+                  </div>
+      
+                  <fieldset class="col-span-6">
+                    <legend class="block mb-1 text-sm text-gray-600">
+                      Card Details
+                    </legend>
+      
+                    <div class="-space-y-px bg-white rounded-lg shadow-sm">
+                      <div>
+                        <label class="sr-only" for="card-number">Card Number</label>
+      
+                        <input
+                          class="border-gray-200 relative rounded-t-lg w-full focus:z-10 text-sm p-2.5 placeholder-gray-400"
+                          type="text"
+                          name="card-number"
+                          id="card-number"
+                          placeholder="Card number"
+                        />
+                      </div>
+      
+                      <div class="flex -space-x-px">
+                        <div class="flex-1">
+                          <label class="sr-only" for="card-expiration-date">
+                            Expiration Date
+                          </label>
+      
+                          <input
+                            class="border-gray-200 relative rounded-bl-lg w-full focus:z-10 text-sm p-2.5 placeholder-gray-400"
+                            type="text"
+                            name="card-expiration-date"
+                            id="card-expiration-date"
+                            placeholder="MM / YY"
+                          />
+                        </div>
+      
+                        <div class="flex-1">
+                          <label class="sr-only" for="card-cvc">CVC</label>
+      
+                          <input
+                            class="border-gray-200 relative rounded-br-lg w-full focus:z-10 text-sm p-2.5 placeholder-gray-400"
+                            type="text"
+                            name="card-cvc"
+                            id="card-cvc"
+                            placeholder="CVC"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+      
+                  <fieldset class="col-span-6">
+                    <legend class="block mb-1 text-sm text-gray-600">
+                      Billing Address
+                    </legend>
+      
+                    <div class="-space-y-px bg-white rounded-lg shadow-sm">
+                      <div>
+                        <label class="sr-only" for="country">Country</label>
+      
+                        <select
+                          class="border-gray-200 relative rounded-t-lg w-full focus:z-10 text-sm p-2.5"
+                          id="country"
+                          name="country"
+                          autocomplete="country-name"
+                        >
+                          <option>England</option>
+                          <option>Wales</option>
+                          <option>Scotland</option>
+                          <option>France</option>
+                          <option>Belgium</option>
+                          <option>Japan</option>
+                        </select>
+                      </div>
+      
+                      <div>
+                        <label class="sr-only" for="postal-code">
+                          ZIP/Post Code
+                        </label>
+      
+                        <input
+                          class="border-gray-200 relative rounded-b-lg w-full focus:z-10 text-sm p-2.5 placeholder-gray-400"
+                          type="text"
+                          name="postal-code"
+                          id="postal-code"
+                          autocomplete="postal-code"
+                          placeholder="ZIP/Post Code"
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+      
+                  <div class="col-span-6">
+                    <button
+                      class="rounded-lg bg-black text-sm p-2.5 text-white w-full block"
+                      type="submit"
+                    >
+                      Pay Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+        <!-- AlpineJS -->
+        <script src="../script.js" defer></script>
+    </body>
+</html>
